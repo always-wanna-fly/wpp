@@ -3,3 +3,7 @@ recipe: wordpress
 config:
   webroot: wordpress
   xdebug: true
+
+services:
+  myservice:
+    type: phpmyadmin

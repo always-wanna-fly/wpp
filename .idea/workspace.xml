@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ddb475f-06bc-4cdb-8bb5-1ff8c1298cdc" name="Default Changelist" comment="" />
+    <list default="true" id="7ddb475f-06bc-4cdb-8bb5-1ff8c1298cdc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lando.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.lando.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +33,9 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpDebugGeneral" zd_debug_port="9000" />
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
@@ -20,8 +47,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wordpress/wp-content/themes/consoles" />
     <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wordpress/wp-content/themes/consoles" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/assets" />
+      <recent name="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/bootstrap" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -34,12 +72,40 @@
       <workItem from="1605536157152" duration="946000" />
       <workItem from="1605538120357" duration="2157000" />
       <workItem from="1605547099392" duration="3000" />
-      <workItem from="1605602383412" duration="978000" />
+      <workItem from="1605602383412" duration="1790000" />
+      <workItem from="1605605283243" duration="2440000" />
+      <workItem from="1605607836910" duration="1766000" />
+      <workItem from="1605609678533" duration="1495000" />
+      <workItem from="1605611487088" duration="1768000" />
+      <workItem from="1605613303732" duration="1470000" />
+      <workItem from="1605615240824" duration="1817000" />
+      <workItem from="1605617074900" duration="1250000" />
+      <workItem from="1605618883047" duration="1715000" />
+      <workItem from="1605620698760" duration="1789000" />
+      <workItem from="1605622517786" duration="1792000" />
+      <workItem from="1605624335550" duration="1770000" />
+      <workItem from="1605626945083" duration="1792000" />
+      <workItem from="1605628758244" duration="1791000" />
+      <workItem from="1605630969105" duration="1791000" />
+      <workItem from="1605632777560" duration="1513000" />
+      <workItem from="1605634586998" duration="573000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="669" y="237" width="824" height="684" key="#CLI_Interpreters" timestamp="1605539519887">
@@ -58,6 +124,10 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="944" y="331" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1605539054188" />
+    <state x="982" y="910" width="399" height="149" key="NewPhpFileDialog" timestamp="1605629836994">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="982" y="910" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605629836994" />
     <state x="575" y="214" key="SettingsEditor" timestamp="1605546931355">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
