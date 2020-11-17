@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ddb475f-06bc-4cdb-8bb5-1ff8c1298cdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.lando.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.lando.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +84,7 @@
       <workItem from="1605628758244" duration="1791000" />
       <workItem from="1605630969105" duration="1791000" />
       <workItem from="1605632777560" duration="1513000" />
-      <workItem from="1605634586998" duration="573000" />
+      <workItem from="1605634586998" duration="1792000" />
     </task>
     <servers />
   </component>
