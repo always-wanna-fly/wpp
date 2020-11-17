@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ddb475f-06bc-4cdb-8bb5-1ff8c1298cdc" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="PhpDebugGeneral" zd_debug_port="9000" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="ProjectId" id="1kNLYRFAOQDhcLsPwR9Ne2dyWLH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="settings.php.debug.servers" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ddb475f-06bc-4cdb-8bb5-1ff8c1298cdc" name="Default Changelist" comment="" />
+      <created>1605536154427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605536154427</updated>
+      <workItem from="1605536157152" duration="946000" />
+      <workItem from="1605538120357" duration="2157000" />
+      <workItem from="1605547099392" duration="3000" />
+      <workItem from="1605602383412" duration="978000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="669" y="237" width="824" height="684" key="#CLI_Interpreters" timestamp="1605539519887">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="669" y="237" width="824" height="684" key="#CLI_Interpreters/67.27.1853.1053@67.27.1853.1053" timestamp="1605539519887" />
+    <state x="871" y="411" width="618" height="335" key="#Docker" timestamp="1605538681383">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="871" y="411" width="618" height="335" key="#Docker/67.27.1853.1053@67.27.1853.1053" timestamp="1605538681383" />
+    <state x="556" y="265" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605538254557">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="556" y="265" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1605538254556" />
+    <state x="944" y="331" width="424" height="484" key="FileChooserDialogImpl" timestamp="1605539054188">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="944" y="331" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1605539054188" />
+    <state x="575" y="214" key="SettingsEditor" timestamp="1605546931355">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="575" y="214" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1605546931355" />
+  </component>
+</project>

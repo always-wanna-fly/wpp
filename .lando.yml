@@ -1,0 +1,5 @@
+name: wpp
+recipe: wordpress
+config:
+  webroot: wordpress
+  xdebug: true
