@@ -1,17 +1,10 @@
-<?php
-/*
- Template Name: consoles-news
- */
-
-?>
-
 <?php get_header(); ?>
 
 
 <?php
 $argc=array(
     'numberposts'=>5,
-    'post_type'=>'consoles-news',
+    'post_type'=>'consoles_news',
     'suppress_filters'=>true,
 );
 $posts = get_posts($argc);
@@ -25,4 +18,4 @@ wp_reset_postdata();
 ?>
 
 
-<?php get_header(); ?>
+<?php get_footer(); ?>

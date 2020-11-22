@@ -1,9 +1,4 @@
-<?php
-/*
-Template Name: Сторінка з новиною
-Template Post Type: consoles-news
- */
-?>
+
 <?php get_header()?>
 <?php
 $meta_value = get_post_meta( get_the_ID(), 'meta-text', true );
@@ -29,6 +24,9 @@ $meta_checkbox = get_post_meta( get_the_ID(), 'meta-checkbox', true );
             <p>Інформація підтверджена виробником:<?php if( !empty( $meta_checkbox) ) {
                                                     echo $meta_checkbox;}?>
             </p>
+        </div>
+        <div>
+            <p>навики: <?php the_terms( get_the_ID(), 'tags', '', '/','')?></p>
         </div>
     </div>
 </main>

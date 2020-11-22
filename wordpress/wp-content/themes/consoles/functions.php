@@ -1,32 +1,13 @@
 <?php
-require_once ('wp-kama.php');
 
 
 add_action('after_setup_theme', 'myMenu');
 add_action('widgets_init', 'register_my_widgets');
-
-//class_exists('Kama_Post_Meta_Box') && new Kama_Post_Meta_Box(
-//    array(
-//        'id'         => 'my',
-//        'title'      => 'Мій metabox',
-//        'post_type'  => array('consoles-news'),
-//        'fields'     => array(
-//            'text_field' => array( 'title' => 'Додаткова інформація'),
-//            'number_field'    => array(
-//                'type'=>'number', 'title'=>'Ціна'
-//            ),
-//        ),
-//    )
-//);
-//
-   /*
-    * Metabox
-    */
 /**
  * Adds a meta box to the post editing screen
  */
 function prfx_custom_meta() {
-    add_meta_box( 'prfx_meta', __( 'мій кастомний метабокс', 'prfx-textdomain' ), 'prfx_meta_callback', 'consoles-news' );
+    add_meta_box( 'prfx_meta', __( 'мій кастомний метабокс', 'prfx-textdomain' ), 'prfx_meta_callback', 'consoles_news' );
 }
 add_action( 'add_meta_boxes', 'prfx_custom_meta' );
 
@@ -82,11 +63,8 @@ add_action( 'save_post', 'prfx_meta_save' );
     * end Metabox
     */
 
-
-
-
 function create_post_type(){
-    register_post_type('consoles-news',
+    register_post_type('consoles_news',
         array(
             'labels'=>array(
                 'name'=>'Новина',
@@ -117,7 +95,7 @@ function create_post_type(){
             'menu_icon'=>null,
             'hierarchical'=>false,
             'supports'=>array('title', 'editor', 'author', 'thumbnail', 'excerpt'),
-            'taxonomies'=>array(),
+            'taxonomies'=>array('tags'),
 
             'rewrite'=>true,
             'query_var'=>true,
@@ -125,6 +103,47 @@ function create_post_type(){
             ));
 }
 add_action('init', 'create_post_type');
+// хук для регистрации
+add_action( 'init', 'create_taxonomy' );
+function create_taxonomy(){
+
+    register_taxonomy( 'tags', array('consoles_news'), [
+        'label'                 => '', // определяется параметром $labels->name
+        'labels'                => [
+            'name'              => 'Теги',
+            'singular_name'     => 'Тег',
+            'search_items'      => 'Знайти тег',
+            'all_items'         => 'Всі теги',
+            'view_item '        => 'Дивитись тег',
+            'parent_item'       => 'Батьківський тег',
+            'parent_item_colon' => 'Батьківський тег:',
+            'edit_item'         => 'Редагувати тег',
+            'update_item'       => 'Змінити тег',
+            'add_new_item'      => 'Додати новий тег',
+            'new_item_name'     => 'Додати новий тег',
+            'menu_name'         => 'Теги',
+        ],
+        'description'           => 'Теги', // описание таксономии
+        'public'                => true,
+         'publicly_queryable'    => null, // равен аргументу public
+        'hierarchical'          => false,
+
+        'rewrite'               => true,
+//        //'query_var'             => $taxonomy, // название параметра запроса
+//        'capabilities'          => array(),
+//        'meta_box_cb'           => null, // html метабокса. callback: `post_categories_meta_box` или `post_tags_meta_box`. false — метабокс отключен.
+//        'show_admin_column'     => false, // авто-создание колонки таксы в таблице ассоциированного типа записи. (с версии 3.5)
+//        'show_in_rest'          => null, // добавить в REST API
+//        'rest_base'             => null, // $taxonomy
+        // '_builtin'              => false,
+        //'update_count_callback' => '_update_post_term_count',
+    ] );
+}
+
+
+
+
+
 
 
 
@@ -140,7 +159,7 @@ function register_my_widgets(){
 function myMenu(){
     register_nav_menu('top', 'header menu');
     add_theme_support('title-tag');
-    add_theme_support('post-thumbnails', array('post', 'consoles-news'));
+    add_theme_support('post-thumbnails', array('post', 'consoles_news'));
     add_image_size('post_thumb', 200, 200, true);
 
 }
