@@ -1,6 +1,89 @@
 <?php
+require_once ('wp-kama.php');
+
+
 add_action('after_setup_theme', 'myMenu');
 add_action('widgets_init', 'register_my_widgets');
+
+//class_exists('Kama_Post_Meta_Box') && new Kama_Post_Meta_Box(
+//    array(
+//        'id'         => 'my',
+//        'title'      => 'Мій metabox',
+//        'post_type'  => array('consoles-news'),
+//        'fields'     => array(
+//            'text_field' => array( 'title' => 'Додаткова інформація'),
+//            'number_field'    => array(
+//                'type'=>'number', 'title'=>'Ціна'
+//            ),
+//        ),
+//    )
+//);
+//
+   /*
+    * Metabox
+    */
+/**
+ * Adds a meta box to the post editing screen
+ */
+function prfx_custom_meta() {
+    add_meta_box( 'prfx_meta', __( 'мій кастомний метабокс', 'prfx-textdomain' ), 'prfx_meta_callback', 'consoles-news' );
+}
+add_action( 'add_meta_boxes', 'prfx_custom_meta' );
+
+/**
+ * Outputs the content of the meta box
+ */
+function prfx_meta_callback( $post ) {
+    wp_nonce_field( basename( __FILE__ ), 'prfx_nonce' );
+    $prfx_stored_meta = get_post_meta( $post->ID );
+    ?>
+
+<?php require_once ('prfx_nonce.php')?>
+
+    <?php
+}
+/**
+ * Saves the custom meta input
+ */
+function prfx_meta_save( $post_id ) {
+
+    // Checks save status
+    $is_autosave = wp_is_post_autosave( $post_id );
+    $is_revision = wp_is_post_revision( $post_id );
+    $is_valid_nonce = ( isset( $_POST[ 'prfx_nonce' ] ) && wp_verify_nonce( $_POST[ 'prfx_nonce' ], basename( __FILE__ ) ) ) ? 'true' : 'false';
+
+    // Exits script depending on save status
+    if ( $is_autosave || $is_revision || !$is_valid_nonce ) {
+        return;
+    }
+
+    // Checks for input and sanitizes/saves if needed
+    if( isset( $_POST[ 'meta-text' ] ) ) {
+        update_post_meta( $post_id, 'meta-text', sanitize_text_field( $_POST[ 'meta-text' ] ) );
+    }
+    // Checks for input and saves
+    if( isset( $_POST[ 'meta-checkbox' ] ) ) {
+        update_post_meta( $post_id, 'meta-checkbox', 'Так' );
+    } else {
+        update_post_meta( $post_id, 'meta-checkbox', 'Ні' );
+    }
+
+// Checks for input and saves
+    if( isset( $_POST[ 'meta-checkbox-two' ] ) ) {
+        update_post_meta( $post_id, 'meta-checkbox-two', 'Так' );
+    } else {
+        update_post_meta( $post_id, 'meta-checkbox-two', 'Ні' );
+    }
+
+}
+add_action( 'save_post', 'prfx_meta_save' );
+
+/*
+    * end Metabox
+    */
+
+
+
 
 function create_post_type(){
     register_post_type('consoles-news',

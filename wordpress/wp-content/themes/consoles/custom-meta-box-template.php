@@ -1,0 +1,1 @@
+<?php /* Plugin Name: Custom Meta Box Template Plugin URI: http://themefoundation.com/ Description: Provides a starting point for creating custom meta boxes. Author: Theme Foundation Version: 1.0 Author URI: http://themefoundation.com/ */

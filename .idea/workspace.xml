@@ -21,9 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7ddb475f-06bc-4cdb-8bb5-1ff8c1298cdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/consoles-news-post.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/consoles-news-post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/consoles-news.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/consoles-news.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wordpress/wp-content/themes/consoles/single.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +104,18 @@
       <workItem from="1605955698650" duration="1689000" />
       <workItem from="1605957510327" duration="1839000" />
       <workItem from="1605959381386" duration="2427000" />
-      <workItem from="1605961836144" duration="414000" />
+      <workItem from="1605961836144" duration="1014000" />
+      <workItem from="1605963760486" duration="1772000" />
+      <workItem from="1605965850939" duration="1494000" />
+      <workItem from="1605967673028" duration="1790000" />
+      <workItem from="1605969483112" duration="1640000" />
+      <workItem from="1605971328884" duration="861000" />
+      <workItem from="1605973460811" duration="1830000" />
+      <workItem from="1605975627242" duration="3347000" />
+      <workItem from="1605979969497" duration="816000" />
+      <workItem from="1606043965999" duration="1780000" />
+      <workItem from="1606045780315" duration="1382000" />
+      <workItem from="1606047603374" duration="2001000" />
     </task>
     <servers />
   </component>
